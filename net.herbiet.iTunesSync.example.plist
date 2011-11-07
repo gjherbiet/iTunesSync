@@ -6,7 +6,7 @@
 	<string>net.herbiet.iTunesSync.example.plist</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/Users/Guillaume/Development/iTunesSync/</string>
+		<string>/some/path/to/iTunesSync</string>
 		<string>"My Device Name"</string>
 	</array>
 	<key>StartInterval</key>
