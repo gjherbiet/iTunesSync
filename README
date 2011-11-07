@@ -1,4 +1,4 @@
-iTunesSync <device_name> [-h|--help]
+iTunesSync "<device_name>" [-h|--help]
   executes an iTunes Sync from the command line on the device
   <device_name> whose name shall be provided.
 
