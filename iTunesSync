@@ -1,7 +1,7 @@
 #/bin/bash
 
 function usage () {
-	echo `basename $0` "<device_name> [-h|--help]"
+	echo `basename $0` "\"<device_name>\" [-h|--help]"
 	echo "  executes an iTunes Sync from the command line on the device"
 	echo "  <device_name> whose name shall be provided."
 	echo ""
