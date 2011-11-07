@@ -1,0 +1,24 @@
+#/bin/bash
+
+function usage () {
+	echo `basename $0` "<device_name> [-h|--help]"
+	echo "  executes an iTunes Sync from the command line on the device"
+	echo "  <device_name> whose name shall be provided."
+	echo ""
+	echo "Arguments:"
+	echo "    -h, --help  : Displays this help."
+}
+
+if [[ -z "$1" || "$1" == "-h" || "$1" == "--help" ]]; then
+	usage
+	if [ -z "$1" ]; then
+		exit 1;
+	else
+		exit 0;
+	fi
+fi
+
+/usr/bin/osascript \
+	-e "try" \
+	-e "	tell application \"iTunes\" to update \"$1\"" \
+	-e "end try"
